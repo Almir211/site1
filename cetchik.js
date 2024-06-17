@@ -16,7 +16,7 @@ window.onload = function() {
   })
   .then(response => response.text())
   .then(data => {
-    document.getElementById('visitCount').textContent = Количество посещений: ${data};
+    document.getElementById('visitCount').textContent = Количество посещений сайта: ${data};
   })
   .catch(err => console.error('Ошибка:', err));
 };
